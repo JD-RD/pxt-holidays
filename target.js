@@ -24,18 +24,18 @@ var pxtTargetBundle = {
   },
   "appTheme": {
     "logoUrl": "https://holidays.pxt.io/",
-    "homeUrl": "https://holidays.pxt.io/",
+    "homeUrl": "/",
     "embedUrl": "https://holidays.pxt.io/",
     "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
     "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
     "docMenu": [
       {
         "name": "About",
-        "path": "/about"
+        "path": "/docs/about"
       },
       {
         "name": "Docs",
-        "path": "/docs"
+        "path": "/docs/docs"
       }
     ],
     "coloredToolbox": true,
