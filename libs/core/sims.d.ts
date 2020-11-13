@@ -2,10 +2,10 @@
 declare namespace card {
     /**
      * Write text on the card
-     * @param text text to write on the card, eg: "Happy Holidays!"
+     * @param text text to write on the card, eg: "Joyeuses fêtes!"
      */
     //% weight=90
-    //% blockId="say" block="say %text"
+    //% blockId="say" block="dire %text"
     //% shim=card::say
     function say(text: string): void;
 
@@ -13,12 +13,12 @@ declare namespace card {
      * Set the card background
      */
     //% weight=89
-    //% blockId="setBackground" block="set background %color=colorNumberPicker2"
+    //% blockId="setBackground" block="Mettre l'arrière plan %color=colorNumberPicker2"
     //% shim=card::setBackground
     function setBackground(color: number): void;
 
     //% weight=89
-    //% blockId="setIcon" block="set icon %icon=main_iconPicker"
+    //% blockId="setIcon" block="mettre l'icône %icon=main_iconPicker"
     //% shim=card::setIcon
     function setIcon(icon: number): void;
 
@@ -31,7 +31,7 @@ declare namespace card {
     /**
      * Set the animation on the lights
      */
-    //% blockId="randomColor" block="random color"
+    //% blockId="randomColor" block="couleur aléatoire"
     //% weight=89
     //% shim=card::randomColor
     function randomColor(): number;
@@ -43,7 +43,7 @@ declare namespace loops {
      * @param body the code to repeat
      */
     //% help=functions/forever weight=99 blockGap=8
-    //% blockId=device_forever block="repeat forever" blockAllowMultiple=true
+    //% blockId=device_forever block="toujours" blockAllowMultiple=true
     //% shim=loops::forever
     function forever(body: () => void): void;
 
@@ -52,7 +52,7 @@ declare namespace loops {
      * @param ms how long to pause for, eg: 1, 2, 5
      */
     //% help=functions/pause weight=98
-    //% block="wait %pause|second(s)" blockId=device_pause
+    //% block="attendre %pause|seconde(s)" blockId=device_pause
     //% s.defl="1"
     //% shim=loops::pauseAsync promise
     function pause(s: number): void;
@@ -63,7 +63,7 @@ declare namespace lights {
      * Set the lights
      */
     //% weight=89
-    //% blockId="setLightColor" block="set lights %color=colorNumberPicker2"
+    //% blockId="setLightColor" block="mettre les lumières %color=colorNumberPicker2"
     //% shim=lights::setLightColor
     function setLightColor(color: number): void;
 
@@ -71,7 +71,7 @@ declare namespace lights {
      * Clear the lights
      */
     //% weight=89
-    //% blockId="clearLights" block="clear lights"
+    //% blockId="clearLights" block="enlever les lumières"
     //% shim=lights::clearLights
     function clearLights(): void;
 

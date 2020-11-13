@@ -4,10 +4,10 @@ namespace pxsim.card {
 
     /**
      * Write text on the card
-     * @param text text to write on the card, eg: "Happy Holidays!"
+     * @param text text to write on the card, eg: "Joyeuses fêtes!"
      */
     //% weight=90
-    //% blockId="say" block="say %text"
+    //% blockId="say" block="dire %text"
     export function say(text: string) {
         board().setText(text);
     }
@@ -16,13 +16,13 @@ namespace pxsim.card {
      * Set the card background
      */
     //% weight=89
-    //% blockId="setBackground" block="set background %color=colorNumberPicker2"
+    //% blockId="setBackground" block="Mettre l'arrière plan %color=colorNumberPicker2"
     export function setBackground(color: number) {
         board().getGame().stage.backgroundColor = `0x${color.toString(16)}`;
     }
 
     //% weight=89
-    //% blockId="setIcon" block="set icon %icon=main_iconPicker"
+    //% blockId="setIcon" block="mettre l'icône %icon=main_iconPicker"
     export function setIcon(icon: number) {
         board().showIcon(icon.toString());
     }
@@ -37,7 +37,7 @@ namespace pxsim.card {
     /**
      * Set the animation on the lights
      */
-    //% blockId="randomColor" block="random color"
+    //% blockId="randomColor" block="couleur aléatoire"
     //% weight=89
     export function randomColor(): number {
         const red = Math.floor(Math.random() * 255);
@@ -54,7 +54,7 @@ namespace pxsim.loops {
      * @param body the code to repeat
      */
     //% help=functions/forever weight=99 blockGap=8
-    //% blockId=device_forever block="repeat forever" blockAllowMultiple=true
+    //% blockId=device_forever block="toujours" blockAllowMultiple=true
     export function forever(body: RefAction): void {
         thread.forever(body)
     }
@@ -64,7 +64,7 @@ namespace pxsim.loops {
      * @param ms how long to pause for, eg: 1, 2, 5
      */
     //% help=functions/pause weight=98
-    //% block="wait %pause|second(s)" blockId=device_pause
+    //% block="attendre %pause|seconde(s)" blockId=device_pause
     //% s.defl="1"
     export function pauseAsync(s: number) {
         return Promise.delay(s * 1000)
@@ -76,7 +76,7 @@ namespace pxsim.lights {
      * Set the lights
      */
     //% weight=89
-    //% blockId="setLightColor" block="set lights %color=colorNumberPicker2"
+    //% blockId="setLightColor" block="mettre les lumières %color=colorNumberPicker2"
     export function setLightColor(color: number) {
         board().drawLights([color.toString()]);
     }
@@ -85,7 +85,7 @@ namespace pxsim.lights {
      * Clear the lights
      */
     //% weight=89
-    //% blockId="clearLights" block="clear lights"
+    //% blockId="clearLights" block="enlever les lumières"
     export function clearLights() {
         board().clearLights();
     }
