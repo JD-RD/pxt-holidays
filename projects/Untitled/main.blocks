@@ -1,0 +1,23 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="pxt-on-start" x="0" y="0">
+    <statement name="HANDLER">
+      <block type="say">
+        <value name="text">
+          <shadow type="text">
+            <field name="TEXT">Happy Holidays!</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="setIcon">
+            <value name="icon">
+              <shadow type="main_iconPicker">
+                <field name="input">Icon.Santa</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
