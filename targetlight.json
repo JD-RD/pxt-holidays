@@ -9,7 +9,7 @@
   },
   "runtime": {
     "mathBlocks": false,
-    "loopsBlocks": false,
+    "loopsBlocks": true,
     "logicBlocks": false,
     "variablesBlocks": false,
     "functionBlocks": false,
@@ -22,7 +22,14 @@
   "compile": {
     "onStartText": true,
     "emptyEventHandlerComments": true,
-    "floatingPoint": true
+    "switches": {},
+    "jsRefCounting": false,
+    "vtableShift": 2,
+    "noSourceInFlash": true
+  },
+  "versions": {
+    "target": "5.0.0",
+    "pxt": "5.2.13"
   },
   "blocksprj": {
     "id": "blocksprj",
@@ -36,7 +43,8 @@
         "main.blocks",
         "main.ts",
         "README.md"
-      ]
+      ],
+      "additionalFilePaths": []
     },
     "files": {
       "README.md": " ",
@@ -55,15 +63,12 @@
       "files": [
         "main.ts",
         "README.md"
-      ]
+      ],
+      "additionalFilePaths": []
     },
     "files": {
       "README.md": " ",
       "main.ts": " "
     }
-  },
-  "versions": {
-    "target": "0.0.1",
-    "pxt": "3.0.1"
   }
 }

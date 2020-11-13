@@ -15,10 +15,10 @@ var pxsim;
     (function (card) {
         /**
          * Write text on the card
-         * @param text text to write on the card, eg: "Happy Holidays!"
+         * @param text text to write on the card, eg: "Joyeuses fêtes!"
          */
         //% weight=90
-        //% blockId="say" block="say %text"
+        //% blockId="say" block="dire %text"
         function say(text) {
             pxsim.board().setText(text);
         }
@@ -27,13 +27,13 @@ var pxsim;
          * Set the card background
          */
         //% weight=89
-        //% blockId="setBackground" block="set background %color=colorNumberPicker"
+        //% blockId="setBackground" block="Mettre l'arrière plan %color=colorNumberPicker2"
         function setBackground(color) {
             pxsim.board().getGame().stage.backgroundColor = "0x" + color.toString(16);
         }
         card.setBackground = setBackground;
         //% weight=89
-        //% blockId="setIcon" block="set icon %icon=main_iconPicker"
+        //% blockId="setIcon" block="mettre l'icône %icon=main_iconPicker"
         function setIcon(icon) {
             pxsim.board().showIcon(icon.toString());
         }
@@ -48,7 +48,7 @@ var pxsim;
         /**
          * Set the animation on the lights
          */
-        //% blockId="randomColor" block="random color"
+        //% blockId="randomColor" block="couleur aléatoire"
         //% weight=89
         function randomColor() {
             var red = Math.floor(Math.random() * 255);
@@ -67,7 +67,7 @@ var pxsim;
          * @param body the code to repeat
          */
         //% help=functions/forever weight=99 blockGap=8
-        //% blockId=device_forever block="repeat forever" blockAllowMultiple=true
+        //% blockId=device_forever block="toujours" blockAllowMultiple=true
         function forever(body) {
             pxsim.thread.forever(body);
         }
@@ -77,7 +77,7 @@ var pxsim;
          * @param ms how long to pause for, eg: 1, 2, 5
          */
         //% help=functions/pause weight=98
-        //% block="wait %pause|second(s)" blockId=device_pause
+        //% block="attendre %pause|seconde(s)" blockId=device_pause
         //% s.defl="1"
         function pauseAsync(s) {
             return Promise.delay(s * 1000);
@@ -92,7 +92,7 @@ var pxsim;
          * Set the lights
          */
         //% weight=89
-        //% blockId="setLightColor" block="set lights %color=colorNumberPicker"
+        //% blockId="setLightColor" block="mettre les lumières %color=colorNumberPicker2"
         function setLightColor(color) {
             pxsim.board().drawLights([color.toString()]);
         }
@@ -101,7 +101,7 @@ var pxsim;
          * Clear the lights
          */
         //% weight=89
-        //% blockId="clearLights" block="clear lights"
+        //% blockId="clearLights" block="enlever les lumières"
         function clearLights() {
             pxsim.board().clearLights();
         }
@@ -122,22 +122,6 @@ var pxsim;
         }
         lights._animationPicker = _animationPicker;
     })(lights = pxsim.lights || (pxsim.lights = {}));
-})(pxsim || (pxsim = {}));
-function logMsg(m) { console.log(m); }
-(function (pxsim) {
-    var console;
-    (function (console) {
-        /**
-         * Print out message
-         */
-        //% 
-        function log(msg) {
-            logMsg("CONSOLE: " + msg);
-            // why doesn't that work?
-            pxsim.board().writeSerial(msg + "\n");
-        }
-        console.log = log;
-    })(console = pxsim.console || (pxsim.console = {}));
 })(pxsim || (pxsim = {}));
 /// <reference path="../node_modules/pxt-core/built/pxtsim.d.ts"/>
 var pxsim;
@@ -428,7 +412,7 @@ var pxsim;
             return this.game && this.game.isBooted && this.gameLoaded;
         };
         Board.prototype.updateView = function () {
-            pxsim.console.log("Update view");
+            console.log("Update view");
         };
         Board.prototype.resizeGame = function (width, height) {
             if (this.isGameInitialized())
@@ -437,7 +421,8 @@ var pxsim;
         Board.prototype.kill = function () {
             _super.prototype.kill.call(this);
             if (this.game) {
-                this.game.world.removeAll();
+                if (this.game.world)
+                    this.game.world.removeAll();
                 this.game.destroy();
                 this.game = null;
                 this.gameLoaded = false;
