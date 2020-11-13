@@ -3,38 +3,38 @@
 
     // This line gets patched up by the cloud
     var pxtConfig = {
-    "relprefix": "/pxt-holidays/",
+    "relprefix": "/",
     "verprefix": "",
-    "workerjs": "/pxt-holidays/worker.js",
-    "monacoworkerjs": "/pxt-holidays/monacoworker.js",
+    "workerjs": "/worker.js",
+    "monacoworkerjs": "/monacoworker.js",
     "pxtVersion": "5.2.13",
     "pxtRelId": "",
-    "pxtCdnUrl": "/pxt-holidays/",
-    "commitCdnUrl": "/pxt-holidays/",
-    "blobCdnUrl": "/pxt-holidays/",
-    "cdnUrl": "/pxt-holidays/",
+    "pxtCdnUrl": "/",
+    "commitCdnUrl": "/",
+    "blobCdnUrl": "/",
+    "cdnUrl": "/",
     "targetVersion": "0.0.0",
     "targetRelId": "",
     "targetUrl": "",
     "targetId": "holidays",
-    "simUrl": "/pxt-holidays/simulator.html",
-    "partsUrl": "/pxt-holidays/siminstructions.html",
-    "runUrl": "/pxt-holidays/run.html",
-    "docsUrl": "/pxt-holidays/docs.html",
+    "simUrl": "/simulator.html",
+    "partsUrl": "/siminstructions.html",
+    "runUrl": "/run.html",
+    "docsUrl": "/docs.html",
     "isStatic": true
 };
 
     var scripts = [
-        "/pxt-holidays/highlight.js/highlight.pack.js",
-        "/pxt-holidays/bluebird.min.js",
-        "/pxt-holidays/semantic.js",
-        "/pxt-holidays/marked/marked.min.js",
-        "/pxt-holidays/target.js",
-        "/pxt-holidays/pxtembed.js"
+        "/highlight.js/highlight.pack.js",
+        "/bluebird.min.js",
+        "/semantic.js",
+        "/marked/marked.min.js",
+        "/target.js",
+        "/pxtembed.js"
     ]
 
     if (typeof jQuery == "undefined")
-        scripts.unshift("/pxt-holidays/jquery.js")
+        scripts.unshift("/jquery.js")
 
     var pxtCallbacks = []
 

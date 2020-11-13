@@ -1,66 +1,66 @@
 CACHE MANIFEST
 
 CACHE:
-/pxt-holidays/semantic.js
-/pxt-holidays/main.js
-/pxt-holidays/pxtapp.js
-/pxt-holidays/typescript.js
-/pxt-holidays/marked/marked.min.js
-/pxt-holidays/highlight.js/highlight.pack.js
-/pxt-holidays/jquery.js
-/pxt-holidays/pxtlib.js
-/pxt-holidays/pxtcompiler.js
-/pxt-holidays/pxtblockly.js
-/pxt-holidays/pxtwinrt.js
-/pxt-holidays/pxteditor.js
-/pxt-holidays/pxtsim.js
-/pxt-holidays/pxtembed.js
-/pxt-holidays/pxtworker.js
-/pxt-holidays/pxtweb.js
-/pxt-holidays/blockly.css
-/pxt-holidays/semantic.css
-/pxt-holidays/rtlsemantic.css
+/semantic.js
+/main.js
+/pxtapp.js
+/typescript.js
+/marked/marked.min.js
+/highlight.js/highlight.pack.js
+/jquery.js
+/pxtlib.js
+/pxtcompiler.js
+/pxtblockly.js
+/pxtwinrt.js
+/pxteditor.js
+/pxtsim.js
+/pxtembed.js
+/pxtworker.js
+/pxtweb.js
+/blockly.css
+/semantic.css
+/rtlsemantic.css
 
 
-/pxt-holidays/editor.js
+/editor.js
 
 
 # blockly
-/pxt-holidays/blockly/media/sprites.png
-/pxt-holidays/blockly/media/click.mp3
-/pxt-holidays/blockly/media/disconnect.wav
-/pxt-holidays/blockly/media/delete.mp3
+/blockly/media/sprites.png
+/blockly/media/click.mp3
+/blockly/media/disconnect.wav
+/blockly/media/delete.mp3
 
 # monaco; keep in sync with webapp/public/index.html
-/pxt-holidays/vs/loader.js
-/pxt-holidays/vs/base/worker/workerMain.js
-/pxt-holidays/vs/basic-languages/src/bat.js
-/pxt-holidays/vs/basic-languages/src/cpp.js
-/pxt-holidays/vs/editor/editor.main.css
-/pxt-holidays/vs/editor/editor.main.js
-/pxt-holidays/vs/editor/editor.main.nls.js
-/pxt-holidays/vs/language/json/jsonMode.js
-/pxt-holidays/vs/language/json/jsonWorker.js
-/pxt-holidays/vs/language/typescript/lib/typescriptServices.js
-/pxt-holidays/vs/language/typescript/src/mode.js
-/pxt-holidays/vs/language/typescript/src/worker.js
+/vs/loader.js
+/vs/base/worker/workerMain.js
+/vs/basic-languages/src/bat.js
+/vs/basic-languages/src/cpp.js
+/vs/editor/editor.main.css
+/vs/editor/editor.main.js
+/vs/editor/editor.main.nls.js
+/vs/language/json/jsonMode.js
+/vs/language/json/jsonWorker.js
+/vs/language/typescript/lib/typescriptServices.js
+/vs/language/typescript/src/mode.js
+/vs/language/typescript/src/worker.js
 
 # charts
-/pxt-holidays/smoothie/smoothie_compressed.js
-/pxt-holidays/images/Bars_black.gif
+/smoothie/smoothie_compressed.js
+/images/Bars_black.gif
 
 # ai
-/pxt-holidays/ai.0.js
+/ai.0.js
 
-/pxt-holidays/worker.js
-/pxt-holidays/monacoworker.js
+/worker.js
+/monacoworker.js
 
-# ver Thu Nov 12 2020 23:17:13 GMT-0500 (EST)
+# ver Thu Nov 12 2020 23:26:50 GMT-0500 (EST)
 
 # target
 
 
-/pxt-holidays/target.js
+/target.js
   
 NETWORK:
 *

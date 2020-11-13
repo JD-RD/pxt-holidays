@@ -24,18 +24,18 @@
   },
   "appTheme": {
     "logoUrl": "https://holidays.pxt.io/",
-    "homeUrl": "/pxt-holidays/",
+    "homeUrl": "/",
     "embedUrl": "https://holidays.pxt.io/",
     "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
     "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
     "docMenu": [
       {
         "name": "About",
-        "path": "/pxt-holidays/docs/about"
+        "path": "/docs/about"
       },
       {
         "name": "Docs",
-        "path": "/pxt-holidays/docs/docs"
+        "path": "/docs/docs"
       }
     ],
     "coloredToolbox": true,
